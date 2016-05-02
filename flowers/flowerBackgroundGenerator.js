@@ -89,10 +89,10 @@ var flowerGenerator = {
 			
 			
 			//  Draw Radial - Gradient in Lower Left Corner
-			var gradient = ctx.createRadialGradient(0, h, h, 0, h, 0);
+			var gradient = ctx.createRadialGradient(0, h, h, .1 * w, .9 * h, 0);
 			
-			gradient.addColorStop(0, '#ffffff');
-			gradient.addColorStop(1, '#28A4C9');
+			gradient.addColorStop(0, '#333');
+			gradient.addColorStop(1, '#26AACA');
 			
 			ctx.fillStyle = gradient;
 			ctx.fillRect( 0, 0, w, h );
@@ -144,13 +144,9 @@ var flowerGenerator = {
 			var url = canvas.toDataURL();
 			
 			//  #28A4C9
-			document.body.style.background = 'url(' + url + ') no-repeat'; // top ' + w + 'px ' + h + 'px';
-			var size = w + 'px ' + h + 'px cover';
-			console.log(size);
-			document.body.style.backgroundSize = 'cover'; //'\"' + size + '\"';
+			document.body.style.background = 'url(' + url + ') no-repeat';
 			
-			//console.log(url);
-			
+			document.body.style.backgroundSize = 'cover';	
 	},
 	
 	
