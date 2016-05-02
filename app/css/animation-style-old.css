@@ -1,0 +1,129 @@
+.page-home, .page-about, .page-scriptlets {
+	
+	background: linear-gradient( to bottom rigt, #333333, #5BC0DE );
+}
+
+
+/* ANIMATIONS
+============================================================================= */
+
+/* leaving animations ----------------------------------------- */
+/* rotate and fall */
+@keyframes rotateFall {
+    0%      { transform: rotateZ(0deg); }
+    20%     { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+    40%     { transform: rotateZ(17deg); }
+    60%     { transform: rotateZ(16deg); }
+    100%    { transform: translateY(100%) rotateZ(17deg); }
+}
+
+/* slide in from the bottom */
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+/* rotate out newspaper */
+@keyframes rotateOutNewspaper {
+    to      { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
+}
+
+/* entering animations --------------------------------------- */
+/* scale up */
+/*
+@keyframes scaleUp {
+    from    { opacity: 0.3; -webkit-transform: scale(0.8); }
+}
+*/
+/* slide in from the right */
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* slide in from the bottom */
+@keyframes slideInUp {
+    from    { transform:translateY(100%); }
+    to      { transform: translateY(0); }
+}
+
+
+.ng-enter {
+	
+	animation: scaleOut 0.5s;
+	z-index: 8888;
+	}
+.ng-leave {
+
+	animation: scaleIn 0.5s;
+	z-index: 9999;
+	
+	-webkit-animation-delay: 0.3s;
+	animation-delay: 0.3s;
+}
+
+/** ScaleDownUp **/
+@-webkit-keyframs scaleOut {
+	
+	from { }
+	
+	to {
+		
+		opacity: 0;
+		-webkit-transform: scale(1.2);
+	}
+}
+
+@keyframes scaleOut {
+	
+	from { }
+	
+	to {
+		
+		opacity: 0;
+		-webkit-transform: scale(1.2)l
+		tranform: scale(1.2);
+	}
+}
+
+/** ScaleUp **/
+@-webkit-keyframs scaleIn {
+	
+	from {
+		
+		opacity: 0;
+		-webkit-transform: scale(0.8);
+	}
+	
+	to {
+		
+
+	}
+}
+
+@keyframes scaleIn {
+	
+	from { 
+		
+		opacity: 0;
+		-webkit-transform: scale(0.8)l
+		tranform: scale(0.8);}	
+	to {  }
+}
+
+
+
+
+
+
+/*
+.page-home.ng-leave {
+	
+		transform-origin: 50% 50%;
+		animation: rotateOutNewspaper .5s both ease-in;
+}
+
+.page-home.ng-enter {
+	
+	animation: slideInUp 0.5s both ease-in;
+}
+*/

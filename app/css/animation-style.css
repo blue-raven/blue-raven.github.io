@@ -1,0 +1,64 @@
+.page-home, .page-about, .page-scriptlets {
+	
+	background: linear-gradient( to bottom rigt, #333333, #5BC0DE );
+}
+
+.view.ng-leave {
+
+	-webkit-animation: scaleDown .3s ease both;
+	animation: scaleDown .3s ease both;
+	
+}
+
+.view.ng-enter {
+	
+	-webkit-animation: scaleUp .3s ease both;
+	animation: scaleUp .3s ease both;
+		
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
+}
+
+
+@-webkit-keyframes scaleDown {
+	from { }
+	to {
+		
+		opacity: 0;
+		-webkit-transform: scale(0.25);
+	}
+}
+
+@keyframes scaleDown {
+	from { }
+	to {
+		
+		opacity: 0;
+		-webkit-transform: scale(0.25);
+		transform: scale(0.25);
+	}
+}
+
+
+@-webkit-keyframes scaleUp {
+	from {
+		opacity: 0;
+		-webkit-transform: scale(0.25);
+	}
+}
+
+@keyframes scaleUp {
+	from {
+	
+		opacity: 0;
+		-webkit-transform: scale(0.25);
+		transform: scale(0.25);
+	}
+}
+
+
+.view-delay-300 {
+	
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s;
+}

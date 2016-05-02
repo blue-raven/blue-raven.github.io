@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="sandboxApp">
+	
+	<head>
+		
+		<title>CC's Sandbox</title>
+		    	
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	
+    	<!--  Set Content Width to use Device's Width
+    		  and Scale / Zoom Factr to 100% -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1" />   	
+
+		<link href="app/css/sandbox-style.css" rel="stylesheet" />
+		
+		<link href="app/bootstrap/css/bootstrap.css" rel="stylesheet" />
+		<link href="app/bootstrap/css/bootstrap-theme.css" rel="stylesheet" />
+		<link href="app/css/animation-style.css" rel="stylesheet" />
+				
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-animate.js"></script>
+		
+
+	</head>
+	
+	
+	<body ng-controller="sandboxController">
+		
+		<!--<h2>CC's Sandbox for HTML,  CSS3,  and Java Script</h2>-->
+		
+		<!--  Navbar / Header  -->
+		<div class="container">
+			
+			<nav class="navbar navbar-fixed-top navbar-inverse">
+				
+				<div class="container-fluid">
+					
+					<div class="navbar-brand">
+						
+						<a href="#/">CC's Sandbox</a>
+					</div>
+											
+					
+					<ul class="nav navbar-nav">
+						
+						<li><a href="#scriptlets">Scriplets</a></li>
+						<li><a href="#about">About</a></li>
+					</ul>
+				
+					
+				</div>
+				
+			</nav>
+		
+		<!--  Footer  -->
+				
+		<nav class="navbar navbar-fixed-bottom navbar-inverse">
+			
+			<div class="container-fluid">
+				
+				<div class="navbar-brand">
+					
+					<p>Take These Broken Wings...</p>
+				</div>
+			</div>
+		</nav>
+		
+		</div>
+		
+		<!--  Main Content Inject Here  -->
+				
+		<div class="content">
+			
+			<div ng-view class="view">
+				
+			</div>
+			
+			<div id="flowers">
+				
+			</div>
+			
+		</div>
+	
+		
+			<script src="app/bootstrap/js/jquery-2.2.3.min.js"></script>
+			<script src="app/bootstrap/js/bootstrap.js"></script>
+			
+		    <script src="app/scripts/app.js"></script>
+		    <script src="app/scripts/scriptlets_controller.js"></script>
+		    <script src="app/scripts/about_controller.js"></script>
+		    
+		    <script src="flowers/flowerBackgroundGenerator.js"></script>
+	</body>	
+</html>
